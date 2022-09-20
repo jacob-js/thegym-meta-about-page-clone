@@ -30,4 +30,16 @@ newsContainer.innerHTML = news.map(art => (
         </p>
     </div>
     `
-)).join('')
+)).join('');
+
+const nav = document.getElementById('nav');
+
+window.onscroll = e =>{
+    if(window.scrollY >= 600){
+        nav.classList.add("top-0")
+        nav.classList.add("shadow-sm")
+    }else{
+        nav.classList.remove("top-0")
+        nav.classList.remove("shadow-sm")
+    }
+}
