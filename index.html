@@ -9,7 +9,7 @@
     <title>Meta | Social metaverse company</title>
 </head>
 <body>
-    <nav class="bg-white px-10 py-6 flex justify-between items-center sticky z-10 w-full" id="nav">
+    <nav class="bg-white px-10 py-6 flex justify-between fixed items-center z-10 w-full" id="nav">
         <div class="flex gap-5">
             <img src="./img/meta-logo.svg" alt="" class="w-[89px] h-[18px] mr-6">
             <div class="cursor-pointer text-gray-800">Who We Are</div>
@@ -105,19 +105,21 @@
                 <i class="bi bi-arrow-right-circle mr-2"></i> <span class="font-bold">Learn more</span>
             </p>
         </div>
-        <div class="flex w-full gap-10 items-center mt-10 relative">
-            <div class="absolute flex justify-between w-full px-10">
-                <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center"><i class="bi bi-chevron-left text-xl cursor-pointer"></i></div>
-                <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center"><i class="bi bi-chevron-right text-xl cursor-pointer"></i></div>
+        <div class="flex w-full flex-shrink-0 gap-10 items-center mt-10 relative">
+            <div class="absolute flex justify-between w-full px-10 z-10">
+                <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center"><i class="bi bi-chevron-left text-xl cursor-pointer" id="btn-prev"></i></div>
+                <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center" id="btn-next"><i class="bi bi-chevron-right text-xl cursor-pointer"></i></div>
             </div>
-            <div class="w-full h-[380px] overflow-hidden">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="w-full">
-                <img src="./img/2.jpg" alt="">
-            </div>
-            <div class="w-full h-[380px] overflow-hidden">
-                <img src="./img/3.png" alt="">
+            <div class="w-full flex items-center flex-shrink-0 gap-10" id="com-container">
+                <div class="w-full flex-1 h-[380px] overflow-hidden">
+                    <img src="./img/1.jpg" alt="" id="com-img" aria-index="0">
+                </div>
+                <div class="w-full flex-1 overflow-hidden">
+                    <img src="./img/2.jpg" alt="" id="com-img" aria-index="1">
+                </div>
+                <div class="w-full flex-1 h-[380px] overflow-hidden">
+                    <img src="./img/3.png" alt="" id="com-img" aria-index="2">
+                </div>
             </div>
             <div class="absolute -bottom-52 left-[33%] w-1/3 space-y-3 flex flex-col items-center py-6">
                 <div class="text-gray-400">Small businesses</div>

@@ -36,10 +36,28 @@ const nav = document.getElementById('nav');
 
 window.onscroll = e =>{
     if(window.scrollY >= 600){
+        nav.classList.add("fixed")
         nav.classList.add("top-0")
         nav.classList.add("shadow-sm")
     }else{
         nav.classList.remove("top-0")
+        nav.classList.remove("fixed")
         nav.classList.remove("shadow-sm")
     }
-}
+};
+
+const comContent = ['./img/1.jpg', './img/2.jpg', './img/3.png'];
+
+const comContainer = document.getElementById("com-container");
+const nextBtn = document.getElementById("btn-next");
+const prevBtn = document.getElementById("btn-prev");
+let translateX = 0;
+let toInsert = 2;
+nextBtn.addEventListener('click', () =>{
+    translateX -= comContainer.lastElementChild.getBoundingClientRect().width;
+    comContainer.style.transform = `translateX(${translateX}px)`;
+})
+prevBtn.addEventListener('click', () =>{
+    translateX += comContainer.lastElementChild.getBoundingClientRect().width;
+    comContainer.style.transform = `translateX(${translateX}px)`
+})
