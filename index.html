@@ -9,15 +9,23 @@
     <title>Meta | Social metaverse company</title>
 </head>
 <body>
-    <nav class="bg-white px-10 py-6 flex justify-between fixed items-center z-20 w-full" id="nav">
-        <div class="flex gap-5">
+    <nav class="bg-white px-10 py-4 md:py-6 flex justify-between fixed items-center z-20 w-full" id="nav">
+        <div class="w-full flex justify-end lg:hidden">
+            <div>
+                <img src="./img/meta-logo.svg" alt="" class="w-[70px] h-[18px] content">
+            </div>
+            <div class="w-2/4 text-right">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+        <div class="hidden lg:flex gap-5">
             <img src="./img/meta-logo.svg" alt="" class="w-[89px] h-[18px] mr-6">
             <div class="cursor-pointer text-gray-800">Who We Are</div>
             <div class="cursor-pointer text-gray-800">What We Build</div>
             <div class="cursor-pointer text-gray-800">Our Actions</div>
             <div class="cursor-pointer text-gray-800">Our Community</div>
         </div>
-        <div class="flex gap-5 items-center">
+        <div class="hidden lg:flex gap-5 items-center">
             <div class="relative cursor-pointer text-gray-800">
                 <span>Shop</span> <i class="bi bi-chevron-down text-xs"></i>
             </div>
@@ -33,16 +41,16 @@
     </nav>
     <div class="relative w-full z-0 max-h-[100vh] overflow-y-hidden">
         <video src="./video/hero-vid.mp4" autoplay="on" class="w-full" loop="1" muted></video>
-        <div class="absolute left-16 top-[40%]">
-            <h1 class="text-white text-5xl max-w-lg leading-tight">We’re building the next evolution of digital connection</h1>
+        <div class="absolute left-8 md:left-16 top-[20%] md:top-[40%]">
+            <h1 class="text-white text-2xl md:text-5xl max-w-lg leading-tight">We’re building the next evolution of digital connection</h1>
             <p class="text-gray-200 mt-5 cursor-pointer hover:opacity-70">
                 <i class="bi bi-arrow-right-circle mr-2"></i> Discover the metaverse
             </p>
         </div>
     </div>
-    <div class="py-10 px-16">
+    <div class="py-10 px-8 md:px-16">
         <div class="mb-10"><i class="bi bi-arrow-down-short mr-3"></i> Shop our products</div>
-        <div class="grid gap-10 grid-cols-4">
+        <div class="grid gap-10 md:grid-cols-4">
             <div class="cursor-pointer flex flex-col justify-between">
                 <img src="./img/portal.png" alt="" class="w-full h-[200px] object-cover object-center">
                 <div class="text-lg mt-5">Meta Quest</div>
@@ -69,7 +77,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-200 flex flex-col items-center p-16 gap-5 mt-14">
+    <div class="bg-gray-200 flex flex-col items-center p-8 md:p-16 gap-5 mt-14">
         <div class="text-gray-500 text-center">Technologies</div>
         <div class="text-4xl text-center max-w-lg tracking-wider">
             Innovation that will shape how we connect in the metaverse
@@ -77,17 +85,17 @@
         <p class="text-gray-800 cursor-pointer hover:opacity-70">
             <i class="bi bi-arrow-right-circle mr-2"></i> <span class="font-bold">Learn more</span>
         </p>
-        <video src="./video/video-2.mp4" autoplay="1" loop="1" class="max-w-[85%] mt-10" muted></video>
-        <div class="w-[85%] mt-10">
+        <video src="./video/video-2.mp4" autoplay="1" loop="1" class="w-full md:max-w-[85%] mt-10" muted></video>
+        <div class="md:w-[85%] mt-10">
             <div class="mb-5"><i class="bi bi-arrow-down-short mr-3"></i> Latest from Meta</div>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid md:grid-cols-2 gap-10">
                 <div class="w-full flex bg-white justify-between items-center p-2 cursor-pointer">
-                    <img src="./img/10.png" width="136px" class="block">
+                    <img src="./img/10.png" class="block w-[70px] md:w-[136px]">
                     <div class="text-lg ml-5">Learn how we're innovating responsably</div>
                     <div class="border w-12 h-10 rounded-full flex justify-center items-center border-gray-400"><i class="bi bi-arrow-right-short text-xl"></i></div>
                 </div>
                 <div class="w-full flex bg-white items-center justify-between p-2 cursor-pointer">
-                    <img src="./img/11.jpg" width="136px">
+                    <img src="./img/11.jpg" class="block w-[70px] md:w-[136px]">
                     <div class="text-lg">See latest news</div>
                     <div class="border w-10 h-10 rounded-full flex justify-center items-center border-gray-400"><i class="bi bi-arrow-right-short text-xl"></i></div>
                 </div>
@@ -106,11 +114,11 @@
             </p>
         </div>
         <div class="flex w-full flex-shrink-0 gap-10 items-center mt-10 relative">
-            <div class="absolute flex justify-between w-full px-10 z-10">
+            <div class="absolute hidden md:flex justify-between w-full px-10 z-10">
                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center"><i class="bi bi-chevron-left text-xl cursor-pointer" id="btn-prev"></i></div>
                 <div class="bg-white w-14 h-14 rounded-full flex items-center justify-center" id="btn-next"><i class="bi bi-chevron-right text-xl cursor-pointer"></i></div>
             </div>
-            <div class="w-full flex items-center flex-shrink-0 gap-10" id="com-container">
+            <div class="w-full grid px-8 md:px-0 overflow-hidden md:flex items-center flex-shrink-0 gap-10" id="com-container">
                 <div class="w-full flex-1 h-[380px] overflow-hidden">
                     <img src="./img/1.jpg" alt="" id="com-img" aria-index="0">
                 </div>
@@ -121,7 +129,7 @@
                     <img src="./img/3.png" alt="" id="com-img" aria-index="2">
                 </div>
             </div>
-            <div class="absolute -bottom-52 left-[33%] w-1/3 space-y-3 flex flex-col items-center py-6">
+            <div class="absolute -bottom-52 left-[33%] w-1/3 space-y-3 hidden md:flex flex-col items-center py-6">
                 <div class="text-gray-400">Small businesses</div>
                 <p class="text-gray-500 text-xl text-center">
                     Over 10 million advertisers use Meta’s personalized ad tools—the majority are small and medium-sized businesses.
@@ -131,55 +139,57 @@
                 </p>
             </div>
         </div>
-        <div class="w-4/5 border m-auto mt-96"></div>
+        <div class="w-4/5 border m-auto mt-20 md:mt-80"></div>
     </div>
 
-    <div class="flex flex-col items-center gap-5 py-16 border-b m-auto mb-10 w-4/5">
-        <div class="text-center text-gray-500">Actions</div>
-        <div class="text-4xl text-center max-w-lg tracking-wider">
+    <div class="w-[90%] flex flex-col items-center gap-5 py-8 md:py-16 border-b m-auto mb-10 md:w-4/5">
+        <div class="text-xs md:text-base text-center text-gray-500">Actions</div>
+        <div class="text-2xl md:text-4xl text-center max-w-lg tracking-wider">
             Keeping people safe and making a positive impact
         </div>
-        <p class="text-gray-800 cursor-pointer hover:opacity-70">
+        <p class="text-gray-800 text-sm md:text-base cursor-pointer hover:opacity-70">
             <i class="bi bi-arrow-right-circle mr-2"></i> <span class="font-bold">Learn more</span>
         </p>
-        <div class="w-full grid grid-cols-2 mt-10">
-            <div class="bg-gray-800 px-12 flex flex-col justify-center text-white gap-6">
-                <div class="text-4xl max-w-[80%]">
+        <div class="w-full flex flex-col-reverse md:grid grid-cols-2 mt-10">
+            <div class="bg-gray-800 p-5 md:px-12 flex flex-col justify-center text-white gap-6">
+                <div class="text-xl md:text-4xl max-w-[80%]">
                     Emphasizing privacy and security
                 </div>
-                <p>
+                <p class="text-xs md:text-base">
                     We’re dedicated to keeping your account secure and empowering you to make choices about the way your data is used.
                 </p>
                 <p class="text-gray-200 cursor-pointer hover:opacity-70">
                     <i class="bi bi-arrow-right-circle mr-2"></i> <span class="font-bold">Learn more</span>
                 </p>
             </div>
-            <img src="./img/4.jpeg" alt="">
+            <div class="bg-gray-200">
+                <img src="./img/4.jpeg" alt="">
+            </div>
         </div>
-        <div class="w-[90%] mt-10">
-            <div class="mb-5"><i class="bi bi-arrow-down-short mr-3"></i> More actions we're taking</div>
-            <div class="grid grid-cols-2 gap-16">
+        <div class="w-[100%] mt-10">
+            <div class="text-xs md:text-base mb-5"><i class="bi bi-arrow-down-short mr-3"></i> More actions we're taking</div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-16">
                 <div class="w-full flex bg-gray-100 items-center p-2 cursor-pointer">
-                    <img src="./img/5.jpeg" width="136px" class="block">
-                    <div class="text-lg ml-5 max-w-[50%] mr-5 text-gray-800">Responding to COVID-19</div>
+                    <img src="./img/5.jpeg" class="block w-[70px] md:w-[136px]">
+                    <div class="md:text-lg ml-5 max-w-[50%] mr-5 text-gray-800">Responding to COVID-19</div>
                     <div class="border w-10 h-10 rounded-full flex justify-center items-center border-gray-400"><i class="bi bi-arrow-right-short text-xl"></i></div>
                 </div>
                 <div class="w-full flex bg-gray-100 items-center p-2 cursor-pointer">
-                    <img src="./img/6.jpeg" width="136px">
-                    <div class="text-lg ml-5 max-w-[50%] mr-5 text-gray-800">Promoting Safety and Expression</div>
+                    <img src="./img/6.jpeg" class="block w-[70px] md:w-[136px]">
+                    <div class="md:text-lg ml-5 max-w-[50%] mr-5 text-gray-800">Promoting Safety and Expression</div>
                     <div class="border w-10 h-10 rounded-full flex justify-center items-center border-gray-400"><i class="bi bi-arrow-right-short text-xl"></i></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-[80%] mx-auto py-10">
+    <div class="w-[90%] md:w-[80%] mx-auto py-10">
         <div class="mb-8"><i class="bi bi-arrow-down-short mr-3"></i> Latest News</div>
-        <div class="grid grid-cols-3 gap-10" id="news"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10" id="news"></div>
     </div>
 
     <footer class="w-full bg-gray-100 mt-14">
-        <div class="grid grid-cols-[25%,repeat(3,1fr)] p-20 gap-10">
-            <div class="row-span-2">
+        <div class="grid grid-cols-1 md:grid-cols-[25%,repeat(3,1fr)] px-5 py-20 md:p-20 gap-10">
+            <div class="md:row-span-2">
                 <img src="./img/meta-logo.svg" alt="" class="w-20 mb-14">
                 <div class="text-gray-900 text-xs">Follow us</div>
                 <div class="flex gap-3 mt-3 items-center">
